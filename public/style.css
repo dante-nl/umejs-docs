@@ -195,6 +195,11 @@ button:active {
     box-shadow: inset 0px 4px var(--shadow);
 }
 
+hr {
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius);
+}
+
 .title {
     font-size: 2.5rem;
 }
