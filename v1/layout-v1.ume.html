@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} | umejs</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- highlightjs -->
+    <link rel="stylesheet" href="/media/highlightjs/default.min.css">
+    <script src="/media/highlightjs/highlight.min.js"></script>
+    <link id="hljs-dark" rel="stylesheet" href="/media/highlightjs/tokyo-night-dark.min.css">
+    <link id="hljs-light" rel="stylesheet" href="/media/highlightjs/tokyo-night-light.min.css">
+
+    <!-- fontawesome -->
+    <link href="/media/fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="/media/fontawesome/css/solid.css" rel="stylesheet" />
+</head>
+
+<body>
+    {_INCLUDE("header.ume.html")}
+
+    <main>
+        <div class="sidebar">
+            {sidebar}
+        </div>
+        <div class="article-wrapper">
+            <article>
+                <h1 class="title">{title}</h1>
+                {_BODY}
+            </article>
+
+            {_INCLUDE("footer.ume.html")}
+        </div>
+    </main>
+
+    <script src="/article.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "Atkinson Hyperlegible Next";
+    src: url(../media/fonts/atkinson_next.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible Next";
+    src: url(../media/fonts/atkinson_next_italic.ttf);
+    font-style: italic;
+}
+
+:root {
+    --background: #f6f6f6;
+    --color: #000;
+    --font-family: "Atkinson Hyperlegible Next", sans-serif;
+    --header-height: 0;
+
+    --transparency: 0.7;
+
+    --accent-color: rgb(249, 178, 215);
+    --accent-color-transparent: rgb(249, 178, 215, 0.3);
+    --tertiary-color: #ccc;
+    --shadow: rgba(0, 0, 0, 0.15);
+
+    --border-radius: 1rem;
+
+    --note: rgb(144, 219, 244);
+    --note-trans: rgb(144, 219, 244, 0.3);
+    
+    --tip: rgb(185, 251, 192);
+    --tip-trans: rgb(185, 251, 192, 0.3);
+
+    --important: rgb(207, 186, 240);
+    --important-trans: rgb(207, 186, 240, 0.3);
+
+    --warning: rgb(253, 228, 207);
+    --warning-trans: rgb(253, 228, 207, 0.3);
+
+    --caution: rgb(255, 207, 210);
+    --caution-trans: rgb(255, 207, 210, 0.3);
+}
+
+:root .dark {
+    --background: #121212;
+    --color: #fff;
+
+    --accent-color: rgb(255, 132, 198);
+    --accent-color-transparent: rgb(255, 132, 198, 0.7);
+
+    --tertiary-color: #333;
+
+    --note: rgb(96, 206, 243);
+    --note-trans: rgb(96, 206, 243, 0.3);
+
+    --tip: rgb(126, 251, 132);
+    --tip-trans: rgb(126, 251, 132, 0.3);
+
+    --important: rgb(172, 127, 240);
+    --important-trans: rgb(172, 127, 240, 0.3);
+
+    --warning: rgb(249, 166, 99);
+    --warning-trans: rgb(249, 166, 99, 0.3);
+
+    --caution: rgb(255, 94, 105);
+    --caution-trans: rgb(255, 94, 105, 0.3);
+}
+
+body {
+    background: var(--background);
+    color: var(--color);
+    font-family: var(--font-family);
+    font-size: 16px;
+    transition: background 100ms, color 100ms;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    z-index: 100;
+    position: sticky;
+    top: 1rem;
+    background: var(--accent-color-transparent);
+    backdrop-filter: blur(5px);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    transition: background 100ms,
+}
+
+header div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+header img {
+    height: 3rem;
+}
+
+header a {
+    color: var(--color);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* large size */
+main {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+/* --- DEFAULT HTML STYLING --- */
+
+blockquote {
+    margin: 0;
+    border-left: 3px solid var(--tertiary-color);
+    padding-left: 1.5rem;
+}
+
+blockquote p {
+    margin: 0
+}
+
+blockquote.note {
+    border: 3px solid var(--note);
+    background: var(--note-trans);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+blockquote.tip {
+    border: 3px solid var(--tip);
+    background: var(--tip-trans);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+blockquote.important {
+    border: 3px solid var(--important);
+    background: var(--important-trans);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+blockquote.warning {
+    border: 3px solid var(--warning);
+    background: var(--warning-trans);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+blockquote.caution {
+    border: 3px solid var(--caution);
+    background: var(--caution-trans);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+code {
+    background: var(--tertiary-color);
+    font-family: monospace;
+    transition: background 100ms;
+}
+
+a {
+    color: var(--accent-color);
+}
+
+button {
+    border: 1px solid var(--color);
+    padding: 5px;
+    border-radius: var(--border-radius);
+    box-shadow: 0;
+    background: var(--accent-color);
+    transition: transform 100ms, box-shadow 100ms;
+    cursor: pointer;
+    color: var(--color);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 2px var(--shadow);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: inset 0px 4px var(--shadow);
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+    font-size: 1.2rem;
+    position: sticky;
+    top: calc(var(--header-total-height) + 2rem);
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    max-width: 25vw;
+    padding: 5px;
+}
+
+/* --- TREE STYLED SIDEBAR --- */
+/* remove default bullets */
+.tree,
+.tree ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tree li {
+    position: relative;
+    line-height: 2em;
+    margin-bottom: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* top level items */
+.tree>li {
+    padding-left: 1em;
+}
+
+.tree>li .bullet-filled {
+    position: absolute;
+    left: 2px;
+    top: 0.6em;
+    width: 10px;
+    height: 10px;
+    background: var(--color);
+    border-radius: 50%;
+}
+
+/* explicitly hide tree lines on top level items */
+.tree>li::before,
+.tree>li::after {
+    display: none;
+}
+
+/* nested items */
+.tree ul {
+    margin-left: 1em;
+}
+
+.tree ul li {
+    padding-left: 20px;
+    margin-bottom: 0;
+    /* space for the '|-' arm */
+}
+
+/* the vertical line '|' */
+.tree ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-left: 2px solid var(--color);
+    height: 100%;
+}
+
+/* the horizontal arm '-' */
+.tree ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1em;
+    border-top: 2px solid var(--color);
+    width: 15px;
+}
+
+/* stops the vertical line halfway at the very last item */
+.tree ul li:last-child::before {
+    height: 1em;
+}
+
+.article-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+pre code {
+    background: var(--tertiary-color);
+    padding: 1em;
+    display: block;
+    border-radius: 1rem;
+}
+
+pre {
+    position: relative;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    /* border: none; */
+    /* border-radius: 4px; */
+    /* background: var(--accent-color); */
+    /* color: var(--color); */
+    /* cursor: pointer; */
+    /* opacity: 0.7; */
+    /* transition: opacity 0.2s; */
+}
+
+/* .copy-btn:hover {
+    opacity: 1;
+} */
+
+/* --- SMALL DEVICES --- */
+/* hide sidebar on small devide */
+@media only screen and (max-width: 600px) {
+    main {
+        display: block;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        align-content: stretch;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+
+    .sidebar {
+        position: static !important;
+        max-width: 100% !important;
+        font-size: 1rem !important;
+    }
+}

@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Welcome to umejs!",
+        "link": "/v1/"
+    },
+    {
+        "title": "Quick start",
+        "link": "/v1/quick-start"
+    },
+    {
+        "title": "Config",
+        "link": "/v1/config",
+        "subelements": [
+            {
+                "title": "contentDir",
+                "link": "/v1/config/content-dir"
+            },
+            {
+                "title": "templatePath",
+                "link": "/v1/config/template-path"
+            },
+            {
+                "title": "partialsDir",
+                "link": "/v1/config/partials-dir"
+            },
+            {
+                "title": "mode",
+                "link": "/v1/config/mode"
+            },
+            {
+                "title": "quiet & verbose",
+                "link": "/v1/config/quiet-verbose"
+            },
+            {
+                "title": "notFoundPath",
+                "link": "/v1/config/not-found-path"
+            },
+            {
+                "title": "helpers",
+                "link": "/v1/config/helpers"
+            },
+            {
+                "title": "builders",
+                "link": "/v1/config/builders"
+            }
+
+        ]
+    }
+]
