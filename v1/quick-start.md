@@ -4,13 +4,16 @@ title: Quick start
 
 Getting started with building using umejs is quite easy.
 
+
 # Short version
 
-You'll need Express and umejs to get started:
+You'll need Express and umejs to get started. Since Express is already a requirement of umejs, you don't need to manually add it.
+
+> [!IMPORTANT]
+> You need at least version `22.0` of Node
 
 ```
 npm install @dantenl/umejs
-npm install express
 ```
 
 Then, in your primary JS file (main, server, index) you'll want to get your server running and umejs running with something like this:
@@ -68,7 +71,7 @@ If you're less experienced with Node or if you just want to copy and paste to ge
 
 There are a few things you'll need in order to get your project off the ground. You'll need:
 
-* A recent version of [Nodejs](https://nodejs.org/). For this tutorial, `v22` is used
+* At least version 22 of [Node](https://nodejs.org/en). You can check your version by running `node -v`.
 * A basic understanding of Nodejs and coding in general
 
 ## Step 1: Initialising your project
@@ -88,14 +91,10 @@ This will create a `package.json` file for you. The contents of this file are no
 
 ## Step 2: Installing required resources
 
-Express is what's used for creating your webserver. It's quite useful and is used for a variety of things. For now, we won't be looking at it too much. You can install it using npm:
-```
-npm install express
-```
-
-Secondly, we'll of course need umejs! Similar to express, you'll need to install it using npm:
+Express is what's used for creating your webserver. It's quite useful and is used for a variety of things. For now, we won't be looking at it too much. Installing umejs will also give you Express, though it's better to install it manually as well.
 ```
 npm install @dantenl/umejs
+npm install express@5
 ```
 
 ## Step 3: Getting Express running
