@@ -1,5 +1,5 @@
 ---
-title: "Default variables"
+title: "Variables"
 edited: 2026-07-03
 ---
 
