@@ -45,5 +45,13 @@
             }
 
         ]
+    },
+    {
+        "title": "Default variables",
+        "link": "/v1/default-variables"
+    },
+    {
+        "title": "Using index.md",
+        "link": "/v1/using-index.md"
     }
 ]

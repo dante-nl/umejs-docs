@@ -12,7 +12,7 @@
     "license": "ISC",
     "type": "commonjs",
     "dependencies": {
-        "@dantenl/umejs": "^1.0.0",
+        "@dantenl/umejs": "file:///Users/dante_nl/Projects/umejs/index.js",
         "express": "^5.2.1",
         "js-beautify": "^2.0.3",
         "jsdom": "^29.1.1"

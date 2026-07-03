@@ -16,7 +16,7 @@ const umeConfig = ume({
     mode: 'development',
     // verbose: true,
     // quiet: true,
-    notFoundPath: path.join(__dirname, 'public', '404.html'),
+    // notFoundPath: path.join(__dirname, 'public', '404.html'),n
 
     // extra helpers that run on every request
     helpers: {
