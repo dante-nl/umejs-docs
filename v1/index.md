@@ -7,7 +7,7 @@ edited: 2026-07-02
 
 umejs is a simple to use Markdown engine, allowing you to easily make static sites in your Express project. Great for documentation, a blog, or anything else where you'd want to serve simple webpages. Need an example of what umejs can be capable of? **This website has been made using umejs.**
 
-# ✨ Features
+# Features
 
 Some features include:
 
@@ -16,7 +16,7 @@ Some features include:
 * Include other files using partials
 * Dynamic request helpers and custom builders
 
-# 🚀 Launching your site
+# Launching your site
 
 > [!TIP]
 > For more detailed instructions, visit the [Quick start](quick-start) page!
