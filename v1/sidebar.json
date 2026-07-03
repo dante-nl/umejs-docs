@@ -47,11 +47,11 @@
         ]
     },
     {
-        "title": "Default variables",
-        "link": "/v1/default-variables"
+        "title": "Variables",
+        "link": "/v1/variables"
     },
     {
-        "title": "Using index.md",
-        "link": "/v1/using-index.md"
+        "title": "index.md and 404.md",
+        "link": "/v1/index-and-404.md"
     }
 ]
