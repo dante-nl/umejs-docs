@@ -1,5 +1,4 @@
 function updateHeaderHeight() {
-    console.log("trest")
     const header = document.querySelector('header');
     if (!header) return;
 
@@ -115,8 +114,8 @@ function fallbackCopy(text, btn) {
 // --- toggle dark mode ---
 
 const darkModeMql = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
-const light = document.getElementById('hljs-light');
-const dark = document.getElementById('hljs-dark');
+const light = document.getElementById('hljs-light') || { disabled: null };
+const dark = document.getElementById('hljs-dark') || { disabled: null };
 const darkModeButton = document.getElementById("dark-mode-toggle")
 
 if(!localStorage.getItem("mode")) {
