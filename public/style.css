@@ -204,6 +204,25 @@ hr {
     font-size: 2.5rem;
 }
 
+table {
+    /* border: 1px solid var(--accent-color); */
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    /* background-color: var(--tertiary-color); */
+    gap: 0;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 1rem;
+    border: 1px solid var(--accent-color);
+}
+
+/* only applies transparent background when there are 3 or more items */
+tr:first-child:nth-last-child(n+3)~tr:nth-child(even) {
+    background: var(--accent-color-transparent);
+}
+
 /* --- SIDEBAR --- */
 .sidebar {
     font-size: 1.2rem;
