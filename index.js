@@ -13,7 +13,7 @@ const umeConfig = ume({
     contentDir: path.join(__dirname, 'v1'),
     templatePath: path.join(__dirname, 'v1', 'layout-v1.ume.html'),
     partialsDir: path.join(__dirname, 'v1', 'partials'),
-    mode: 'development',
+    mode: 'production',
     // verbose: true,
     // quiet: true,
     // notFoundPath: path.join(__dirname, 'public', '404.html'),n
