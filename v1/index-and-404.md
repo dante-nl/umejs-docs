@@ -1,7 +1,11 @@
 ---
 title: index.md and 404.md
-edited: 2026-07-03
+edited: 2026-07-07
+min-version: 1.1.0
 ---
+
+> [!NOTE]
+> You need version `{min-version}` or newer.
 
 There are two special filenames in umejs. These are the only two files that can be visited without typing the specific slug. 
 

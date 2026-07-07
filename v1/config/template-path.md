@@ -1,6 +1,6 @@
 ---
 title: "{_SLUG}"
-edited: 2026-07-1
+edited: 2026-07-01
 ---
 
 The template path is the file where you'll create the template of your website. 

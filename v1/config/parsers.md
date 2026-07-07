@@ -1,5 +1,6 @@
 ---
 title: "{_SLUG}"
+edited: 2026-07-07
 min-version: 1.2.0
 ---
 

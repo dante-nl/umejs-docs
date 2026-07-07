@@ -36,6 +36,14 @@
                 "link": "/v1/config/not-found-path"
             },
             {
+                "title": "nextUsage",
+                "link": "/v1/config/next-usage"
+            },
+            {
+                "title": "parsers",
+                "link": "/v1/config/parsers"
+            },
+            {
                 "title": "helpers",
                 "link": "/v1/config/helpers"
             },

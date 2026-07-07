@@ -1,6 +1,6 @@
 ---
 title: "{_SLUG}"
-edited: 2026-07-1
+edited: 2026-07-01
 ---
 
 `contentDir` is the bread and butter of umejs. By defining it, you tell umejs where to find the Markdown files. Here's quick example using `fs` (default in Node) to automatically get the full path of the project directory. This should basically be a foolproof method.

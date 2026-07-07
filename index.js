@@ -13,7 +13,7 @@ const umeConfig = ume({
     contentDir: path.join(__dirname, 'v1'),
     templatePath: path.join(__dirname, 'v1', 'layout-v1.ume.html'),
     partialsDir: path.join(__dirname, 'v1', 'partials'),
-    mode: 'production',
+    mode: 'development',
 
     // extra helpers that run on every request
     helpers: {
@@ -57,7 +57,7 @@ function buildSidebar(slug) {
 
     let sidebar = ""
     templateJSON.forEach(sidebarElement => {
-        if(!("subelements" in sidebarElement)) {
+        if (!("subelements" in sidebarElement)) {
             // simple sidebar without any sub things
             sidebar += `<li><span class="bullet-filled"></span> <a href="${sidebarElement.link}">${sidebarElement.title}</a></li>`
         } else {
@@ -80,7 +80,7 @@ function buildFancyBlockquote(req, res, slug, html) {
     // i know it could technically be on the page itself, but it's more fun this way isn't it?
     const dom = new JSDOM(html)
     const document = dom.window.document
-    
+
     const blockquotes = document.querySelectorAll("blockquote")
     blockquotes.forEach(blockquote => {
         blockquote = manageBlockquote(blockquote, "note", "fa-solid fa-circle-info")
@@ -144,7 +144,7 @@ app.get('/', (req, res) => {
     res.redirect(301, "/v1/")
 });
 
-app.use((req, res, next) => {
+app.use((req, res) => {
     res.status(404).sendFile(__dirname + "/public/404.html")
 });
 
