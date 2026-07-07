@@ -14,9 +14,6 @@ const umeConfig = ume({
     templatePath: path.join(__dirname, 'v1', 'layout-v1.ume.html'),
     partialsDir: path.join(__dirname, 'v1', 'partials'),
     mode: 'production',
-    // verbose: true,
-    // quiet: true,
-    // notFoundPath: path.join(__dirname, 'public', '404.html'),n
 
     // extra helpers that run on every request
     helpers: {
@@ -46,7 +43,7 @@ const umeConfig = ume({
     builders: [
         buildFancyBlockquote,
         prettify
-    ]
+    ],
 });
 
 /**
