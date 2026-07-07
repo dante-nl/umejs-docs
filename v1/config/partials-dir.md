@@ -6,6 +6,7 @@ edited: 2026-07-2
 The partials directory is, as the name implies, the directory where your partials are stored. Partials are a way to import files in your umejs template or Markdown files. Here's a quick example on how to use partialsDir in your configuration:
 
 ```js
+const ume = require("@dantenl/umejs")
 const path = require('path');
 const umeConfig = ume({
     partialsDir: path.join(__dirname, 'partials'),

@@ -8,6 +8,7 @@ umejs supports custom builders, special helper functions that don't need to be i
 Here's how to use it in your project:
 
 ```js
+const ume = require("@dantenl/umejs")
 const path = require('path');
 const umeConfig = ume({
     builders: [

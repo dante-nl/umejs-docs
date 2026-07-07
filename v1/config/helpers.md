@@ -6,6 +6,7 @@ edited: 2026-07-02
 umejs is quite flexible. You can define custom variables using frontmatter and use them anywhere within umejs. These variables are quite static though. **Using helper functions, you can make your own.** You can build them every time a page is loaded or have them cached by umejs, it's up to you. Here's a basic example of a function that returns the current UNIX time:
 
 ```js
+const ume = require("@dantenl/umejs")
 const path = require('path');
 const umeConfig = ume({
     helpers: {

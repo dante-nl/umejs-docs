@@ -6,6 +6,7 @@ edited: 2026-07-1
 `contentDir` is the bread and butter of umejs. By defining it, you tell umejs where to find the Markdown files. Here's quick example using `fs` (default in Node) to automatically get the full path of the project directory. This should basically be a foolproof method.
 
 ```js
+const ume = require("@dantenl/umejs")
 const path = require('path');
 ume({
     contentDir: path.join(__dirname, 'blog'),

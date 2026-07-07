@@ -6,7 +6,7 @@ edited: 2026-07-02
 The quiet and verbose options are quite simple: how much should umejs say? With `verbose` meaning: it should say a lot and `quiet` it should just shut up. Here's how you can set either of these settings:
 
 ```js
-// quiet
+const ume = require("@dantenl/umejs")
 const path = require('path');
 ume({
     quiet: true, // default: false

@@ -10,6 +10,7 @@ As your template is an HTML file that can be fully parsed with umejs, you *shoul
 Here's an example definition for your configuration:
 
 ```js
+const ume = require("@dantenl/umejs")
 const path = require('path');
 ume({
     templatePath: path.join(__dirname, 'layout.ume.html'),

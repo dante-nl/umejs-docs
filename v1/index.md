@@ -45,6 +45,12 @@ app.use('/blog/{*slug}', ume({
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
 ```
 
+> [!NOTE]
+> It's also possible to use the `import` statement with umejs!
+> ```js
+> import { default as ume } from "@dantenl/umejs"
+> ```
+
 You can now put your Markdown files in a directory named `content`! You'll need a simple template though, basically the wrapper for your Markdown.
 
 ```html

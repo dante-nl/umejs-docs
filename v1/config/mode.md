@@ -11,6 +11,7 @@ When writing some files out locally and wanting to preview everything, it can be
 Here's en example config of umejs with the mode set to `development`:
 
 ```js
+const ume = require("@dantenl/umejs")
 const path = require('path');
 const umeConfig = ume({
     mode: "development", 
